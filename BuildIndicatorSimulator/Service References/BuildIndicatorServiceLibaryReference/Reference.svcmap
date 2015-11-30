@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8af1c24d-51a9-4e84-a506-ebb4619dc9ab" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="12592db6-29d8-4c61-b1d8-412b57a18ddc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="c0947459-3735-42e8-9cc7-b33c482aa6e4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd0" />
+    <MetadataFile FileName="BuildIndicator.wsdl" MetadataType="Wsdl" ID="2268afe7-f965-45ff-9f74-2b3b1c680703" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="3db8b3aa-2ca2-4b98-9aba-e698fd86e1b1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="2b482574-b88f-4fa5-b0e6-d59870c3ad44" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BuildIndicator" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BuildIndicatorControl" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBuildIndicator_TurnOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOn" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOff_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOff" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOnFlash_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOnFlash" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOnFlash_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOnFlashResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOffAllLights_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOffAllLights" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_TurnOffAllLights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOffAllLightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetBuildState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildState" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetBuildState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_ResetBuildSource_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetBuildSource" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_ResetBuildSource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetBuildSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_Run_InputMessage">
+    <wsdl:part name="parameters" element="tns:Run" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_Run_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetBuildServiceState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildServiceState" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetBuildServiceState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildServiceStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetCurrentSource_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentSource" />
+  </wsdl:message>
+  <wsdl:message name="IBuildIndicator_GetCurrentSource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentSourceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBuildIndicator">
+    <wsdl:operation name="TurnOn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOn" message="tns:IBuildIndicator_TurnOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOnResponse" message="tns:IBuildIndicator_TurnOn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TurnOff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOff" message="tns:IBuildIndicator_TurnOff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOffResponse" message="tns:IBuildIndicator_TurnOff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TurnOnFlash">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOnFlash" message="tns:IBuildIndicator_TurnOnFlash_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOnFlashResponse" message="tns:IBuildIndicator_TurnOnFlash_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TurnOffAllLights">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOffAllLights" message="tns:IBuildIndicator_TurnOffAllLights_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/TurnOffAllLightsResponse" message="tns:IBuildIndicator_TurnOffAllLights_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/GetBuildState" message="tns:IBuildIndicator_GetBuildState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/GetBuildStateResponse" message="tns:IBuildIndicator_GetBuildState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetBuildSource">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/ResetBuildSource" message="tns:IBuildIndicator_ResetBuildSource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/ResetBuildSourceResponse" message="tns:IBuildIndicator_ResetBuildSource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Run">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/Run" message="tns:IBuildIndicator_Run_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/RunResponse" message="tns:IBuildIndicator_Run_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildServiceState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/GetBuildServiceState" message="tns:IBuildIndicator_GetBuildServiceState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/GetBuildServiceStateResponse" message="tns:IBuildIndicator_GetBuildServiceState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSource">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBuildIndicator/GetCurrentSource" message="tns:IBuildIndicator_GetCurrentSource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBuildIndicator/GetCurrentSourceResponse" message="tns:IBuildIndicator_GetCurrentSource_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBuildIndicator" type="tns:IBuildIndicator">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TurnOn">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/TurnOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TurnOff">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/TurnOff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TurnOnFlash">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/TurnOnFlash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TurnOffAllLights">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/TurnOffAllLights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildState">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/GetBuildState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetBuildSource">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/ResetBuildSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Run">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/Run" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildServiceState">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/GetBuildServiceState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSource">
+      <soap:operation soapAction="http://tempuri.org/IBuildIndicator/GetCurrentSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BuildIndicator">
+    <wsdl:port name="BasicHttpBinding_IBuildIndicator" binding="tns:BasicHttpBinding_IBuildIndicator">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/BuildIndicatorServiceLibrary/BuildIndicator/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

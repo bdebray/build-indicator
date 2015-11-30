@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorCommon", "BuildIndicatorCommon\BuildIndicatorCommon.csproj", "{8FA1275B-3644-43E0-A452-9FD7DB3613C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorControl", "BuildIndicatorControl\BuildIndicatorControl.csproj", "{F9E34EA5-DCA2-46D0-9431-B1C23D7EFDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsConnector", "Connectors\JenkinsConnector\JenkinsConnector.csproj", "{26746E42-53C0-42E4-82C4-2E41A5C8EC04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorService", "Service\BuildIndicatorService\BuildIndicatorService.csproj", "{DB119C21-30E2-4432-9AEA-D48791CE727C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorServiceLibrary", "Service\BuildIndicatorServiceLibrary\BuildIndicatorServiceLibrary.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorControlTest", "Test\BuildIndicatorControlTest\BuildIndicatorControlTest.csproj", "{D73B4C35-3721-41A0-A4A9-C434752F9BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorServiceLibraryTest", "Test\BuildIndicatorServiceLibraryTest\BuildIndicatorServiceLibraryTest.csproj", "{E473FB36-0BFD-4CFC-8986-390F16739531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsConnectorTest", "Test\JenkinsConnectorTest\JenkinsConnectorTest.csproj", "{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9D8AC228-44F8-4523-9670-40899910D26A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{094F58C4-B6C3-4C95-98D2-9D9B777571FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Connectors", "Connectors", "{DAF4AA5C-3560-4DB5-AA0F-4FDEE80BBA6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildIndicatorSimulator", "BuildIndicatorSimulator\BuildIndicatorSimulator.csproj", "{748AB810-CB0D-477E-9C7B-32B543921A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FA1275B-3644-43E0-A452-9FD7DB3613C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA1275B-3644-43E0-A452-9FD7DB3613C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA1275B-3644-43E0-A452-9FD7DB3613C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA1275B-3644-43E0-A452-9FD7DB3613C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E34EA5-DCA2-46D0-9431-B1C23D7EFDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E34EA5-DCA2-46D0-9431-B1C23D7EFDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E34EA5-DCA2-46D0-9431-B1C23D7EFDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E34EA5-DCA2-46D0-9431-B1C23D7EFDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26746E42-53C0-42E4-82C4-2E41A5C8EC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26746E42-53C0-42E4-82C4-2E41A5C8EC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26746E42-53C0-42E4-82C4-2E41A5C8EC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26746E42-53C0-42E4-82C4-2E41A5C8EC04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB119C21-30E2-4432-9AEA-D48791CE727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB119C21-30E2-4432-9AEA-D48791CE727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB119C21-30E2-4432-9AEA-D48791CE727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB119C21-30E2-4432-9AEA-D48791CE727C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73B4C35-3721-41A0-A4A9-C434752F9BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73B4C35-3721-41A0-A4A9-C434752F9BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73B4C35-3721-41A0-A4A9-C434752F9BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73B4C35-3721-41A0-A4A9-C434752F9BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E473FB36-0BFD-4CFC-8986-390F16739531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E473FB36-0BFD-4CFC-8986-390F16739531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E473FB36-0BFD-4CFC-8986-390F16739531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E473FB36-0BFD-4CFC-8986-390F16739531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748AB810-CB0D-477E-9C7B-32B543921A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748AB810-CB0D-477E-9C7B-32B543921A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748AB810-CB0D-477E-9C7B-32B543921A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748AB810-CB0D-477E-9C7B-32B543921A18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26746E42-53C0-42E4-82C4-2E41A5C8EC04} = {DAF4AA5C-3560-4DB5-AA0F-4FDEE80BBA6E}
+		{DB119C21-30E2-4432-9AEA-D48791CE727C} = {094F58C4-B6C3-4C95-98D2-9D9B777571FC}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {094F58C4-B6C3-4C95-98D2-9D9B777571FC}
+		{D73B4C35-3721-41A0-A4A9-C434752F9BD6} = {9D8AC228-44F8-4523-9670-40899910D26A}
+		{E473FB36-0BFD-4CFC-8986-390F16739531} = {9D8AC228-44F8-4523-9670-40899910D26A}
+		{EBCDDAC9-E5F0-48BE-ABF2-D9D56E02878D} = {9D8AC228-44F8-4523-9670-40899910D26A}
+	EndGlobalSection
+EndGlobal
